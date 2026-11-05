@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore projects developed by Melvora Technologies across web development, software development and data science.">
+    <title>Our Projects | Melvora Technologies</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MELVORA TECHNOLOGIES</h1>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Projects Introduction -->
+        <section id="projects-intro">
+            <h2>Our Projects</h2>
+
+            <p>
+                Explore some of the solutions we develop at Melvora Technologies. Our projects bring together creativity, technology and problem-solving to address real-world challenges and meet different business needs.
+            </p>
+        </section>
+
+        <!-- Project Categories -->
+        <section id="project-categories">
+            <h2>Explore Our Work</h2>
+
+            <div class="category-card">
+                <h3>Web Development</h3>
+
+                <p>
+                    Websites and web applications designed to improve online presence, accessibility and user experience.
+                </p>
+
+                <a href="web-development.html">Explore Web Development</a>
+            </div>
+
+            <div class="category-card">
+                <h3>Software Development</h3>
+
+                <p>
+                    Custom software applications and systems built to simplify processes and address specific business challenges.
+                </p>
+
+                <a href="software-development.html">Explore Software Development</a>
+            </div>
+
+            <div class="category-card">
+                <h3>Data Science</h3>
+
+                <p>
+                    Data analysis, visualisation and predictive solutions that help turn information into useful insights.
+                </p>
+
+                <a href="data-science.html">Explore Data Science</a>
+            </div>
+        </section>
+
+        <!-- Project Showcase -->
+        <section id="project-showcase">
+
+            <h2>Featured Projects</h2>
+
+            <p>
+                Take a closer look at some of the solutions developed by Melvora Technologies.
+            </p>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All Projects
+                </button>
+
+                <button class="filter-btn" data-filter="web-development">
+                    Web Development
+                </button>
+
+                <button class="filter-btn" data-filter="software-development">
+                    Software Development
+                </button>
+
+                <button class="filter-btn" data-filter="data-science">
+                    Data Science
+                </button>
+
+            </div>
+
+            <!-- Project Card Template -->
+            <div class="project-card" data-category="software-development">
+
+                <div class="project-image">
+                    <img src="images/project-placeholder.jpg" alt="Project preview">
+                </div>
+
+                <div class="project-info">
+
+                    <h3>Project Title</h3>
+
+                    <p>
+                        A brief description of the project, the problem it addresses and the solution developed.
+                    </p>
+
+                    <p>
+                        <strong>Category:</strong> Software Development
+                    </p>
+
+                    <p>
+                        <strong>Technologies:</strong> Python, FastAPI, PostgreSQL
+                    </p>
+
+                    <a href="project-details.html">View Project</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>MELVORA TECHNOLOGIES</h3>
+
+        <p>&copy; 2026 Melvora Technologies. All rights reserved.</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-contact">
+
+            <h3>Get In Touch</h3>
+
+            <p>
+                WhatsApp:
+                <a href="https://wa.me/254111231387" target="_blank">Chat with us</a>
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:awichoscar96@gmail.com">Send us an email</a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+254111231387">Call us</a>
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Get in touch with Melvora Technologies to discuss your web development, software development and data science needs.">
+
+    <title>Contact Us | Melvora Technologies</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         1. HEADER AND NAVIGATION
+    ========================================== -->
+
+    <header>
+
+        <h1>MELVORA TECHNOLOGIES</h1>
+
+        <!-- Mobile Navigation Button -->
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mainNav"
+            type="button">
+
+            ☰
+
+        </button>
+
+        <!-- Main Navigation -->
+        <nav id="mainNav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+         2. MAIN CONTENT
+    ========================================== -->
+
+    <main>
+
+        <!-- Contact Introduction -->
+        <section id="contact-intro">
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                Have a project in mind or looking for a technology
+                solution for your business? We'd be happy to hear
+                from you. Get in touch and let's discuss how we
+                can work together.
+            </p>
+
+        </section>
+
+
+        <!-- Contact Information -->
+        <section id="contact-information">
+
+            <h2>Contact Information</h2>
+
+            <!-- WhatsApp -->
+            <div class="contact-card">
+
+                <h3>WhatsApp</h3>
+
+                <p>
+                    Reach us directly on WhatsApp for enquiries
+                    and discussions about your project.
+                </p>
+
+                <a
+                    href="https://wa.me/254111231387"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Chat on WhatsApp
+
+                </a>
+
+            </div>
+
+
+            <!-- Email -->
+            <div class="contact-card">
+
+                <h3>Email</h3>
+
+                <p>
+                    Send us an email describing your project,
+                    requirements or enquiry.
+                </p>
+
+                <a href="mailto:awichoscar96@gmail.com">
+
+                    awichoscar96@gmail.com
+
+                </a>
+
+            </div>
+
+
+            <!-- Phone -->
+            <div class="contact-card">
+
+                <h3>Phone</h3>
+
+                <p>
+                    You can also reach us directly by phone
+                    for enquiries and consultations.
+                </p>
+
+                <a href="tel:+254111231387">
+
+                    +254 111 231 387
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             3. CONTACT FORM
+        ========================================== -->
+
+        <section id="contact-form">
+
+            <h2>Send Us an Enquiry</h2>
+
+            <p>
+                Tell us a little about your project and the
+                technology solution you are looking for.
+            </p>
+
+
+            <form action="#" method="POST">
+
+                <!-- Full Name -->
+                <div class="form-group">
+
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+
+                </div>
+
+
+                <!-- Phone -->
+                <div class="form-group">
+
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number">
+
+                </div>
+
+
+                <!-- Service Selection -->
+                <div class="form-group">
+
+                    <label for="service">Service Required</label>
+
+                    <select id="service" name="service" required>
+
+                        <option value="">Select a service</option>
+
+                        <option value="web-development">
+                            Web Development
+                        </option>
+
+                        <option value="software-development">
+                            Software Development
+                        </option>
+
+                        <option value="data-science">
+                            Data Science
+                        </option>
+
+                        <option value="other">
+                            Other Enquiry
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Message -->
+                <div class="form-group">
+
+                    <label for="message">Project Details / Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Tell us about your project or enquiry..."
+                        required></textarea>
+
+                </div>
+
+
+                <!-- Submit Button -->
+                <button type="submit">
+
+                    Send Enquiry
+
+                </button>
+
+
+                <!-- Form Feedback -->
+                <p id="formMessage" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         4. FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <h3>MELVORA TECHNOLOGIES</h3>
+
+        <p>
+            Building digital solutions through technology,
+            software and data.
+        </p>
+
+
+        <!-- Footer Navigation -->
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+
+        <!-- Footer Contact Information -->
+        <div class="footer-contact">
+
+            <p>
+                Email:
+                <a href="mailto:awichoscar96@gmail.com">
+                    awichoscar96@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+254111231387">
+                    +254 111 231 387
+                </a>
+            </p>
+
+            <p>
+                WhatsApp:
+                <a
+                    href="https://wa.me/254111231387"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Chat with us
+
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <p>
+            &copy; 2026 Melvora Technologies.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================================
+         5. JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

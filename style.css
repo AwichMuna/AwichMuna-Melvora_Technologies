@@ -1,0 +1,697 @@
+
+/* =========================================
+   1. GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #334155;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #172b4d;
+}
+
+p {
+    color: #64748b;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   2. HEADER AND NAVIGATION
+========================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+header h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #172b4d;
+}
+
+/* Main Navigation */
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #475569;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #2563eb;
+}
+
+/* Mobile Menu Button */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #172b4d;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   3. HOMEPAGE HERO SECTION
+========================================= */
+
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 8%;
+
+    /* Very subtle technical grid */
+    background-color: #f8fafc;
+    background-image:
+        linear-gradient(rgba(37, 99, 235, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.035) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+#home h2 {
+    font-size: 48px;
+    max-width: 850px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #172b4d;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 35px;
+    color: #64748b;
+}
+
+/* Hero Button */
+
+#home a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#home a:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================================
+   4. GENERAL CONTENT SECTIONS
+========================================= */
+
+main section {
+    padding: 70px 8%;
+}
+
+main section:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+main section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #172b4d;
+}
+
+main section > p {
+    max-width: 850px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   5. SERVICE, VALUE AND OTHER CARDS
+========================================= */
+
+.service-card,
+.service-detail,
+.value-card,
+.category-card,
+.project-card,
+.contact-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.035);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.category-card:hover,
+.value-card:hover,
+.project-card:hover,
+.contact-card:hover {
+    border-color: #bfdbfe;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.07);
+}
+
+.service-card h3,
+.service-detail h3,
+.value-card h3,
+.category-card h3,
+.project-card h3,
+.contact-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #172b4d;
+}
+
+
+/* =========================================
+   6. CARD LAYOUTS
+========================================= */
+
+#services,
+#project-categories,
+#values,
+#contact-information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Section Headings and Introductions */
+
+#services h2,
+#services > p,
+#project-categories h2,
+#project-categories > p,
+#values h2,
+#contact-information h2 {
+    grid-column: 1 / -1;
+}
+
+/* About Page Value Cards */
+
+#values {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* =========================================
+   7. PROJECT SHOWCASE
+========================================= */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.project-info a:hover {
+    color: #1d4ed8;
+}
+
+
+/* =========================================
+   8. CONTACT FORM
+========================================= */
+
+#contact-form form {
+    max-width: 700px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    color: #334155;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+#contact-form button {
+    padding: 13px 28px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================================
+   9. FOOTER
+========================================= */
+
+footer {
+    background-color: #f8fafc;
+    padding: 50px 8%;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #172b4d;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #64748b;
+}
+
+/* Footer Navigation */
+
+footer nav {
+    margin: 25px 0;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+footer nav ul li a {
+    color: #475569;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #2563eb;
+}
+
+/* Footer Contact */
+
+.footer-contact {
+    margin-top: 30px;
+}
+
+.footer-contact a {
+    color: #2563eb;
+}
+
+.footer-contact a:hover {
+    color: #1d4ed8;
+}
+
+
+/* =========================================
+   10. TABLET RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 5%;
+    }
+
+    header h1 {
+        font-size: 19px;
+    }
+
+    /* Mobile Navigation */
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    /* Hero Section */
+
+    #home h2 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    /* Card Layouts */
+
+    #services,
+    #project-categories,
+    #values,
+    #contact-information {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* General Sections */
+
+    main section {
+        padding: 50px 5%;
+    }
+
+}
+
+
+/* =========================================
+   11. MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* Header */
+
+    header h1 {
+        font-size: 17px;
+    }
+
+    /* Card Layouts */
+
+    #services,
+    #project-categories,
+    #values,
+    #contact-information {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hero Section */
+
+    #home {
+        min-height: 70vh;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 15px;
+    }
+
+    /* Section Headings */
+
+    main section h2 {
+        font-size: 27px;
+    }
+
+    /* Footer Navigation */
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================
+   12. DESKTOP RESPONSIVE DESIGN
+========================================= */
+
+@media (min-width: 769px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+
+}
+
+
+/* =========================================
+   13. PROJECT FILTER BUTTONS
+========================================= */
+
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+.filter-btn.active {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+/* Hide Filtered Projects */
+
+.project-card.hidden {
+    display: none;
+}
+
+
+/* =========================================
+   14. SMOOTH SCROLLING
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent section headings from hiding behind
+   the header when navigating to an ID */
+
+main section {
+    scroll-margin-top: 25px;
+}
+
+
+/* =========================================
+   15. SCROLL REVEAL ANIMATIONS
+========================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Respect visitors who prefer reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
+/* =========================================
+   16. PAGE LOAD ANIMATIONS
+========================================= */
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Page background */
+
+body {
+    animation: pageFadeIn 0.6s ease both;
+}
+
+/* Main page content */
+
+main section > h2 {
+    animation: slideUp 0.7s ease both;
+}
+
+main section > p {
+    animation: slideUp 0.8s ease both;
+}
+
+/* Page headers */
+
+header h1 {
+    animation: slideFromLeft 0.7s ease both;
+}
+
+/* Hero content */
+
+#home h2 {
+    animation: slideUp 0.8s ease both;
+}
+
+#home p {
+    animation: slideUp 1s ease both;
+}
+
+#home a {
+    animation: slideUp 1.2s ease both;
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
